@@ -1,0 +1,1 @@
+$script = 'for($i=1;$i -le 25;$i++){":3" | Out-File "note$i.txt"; Start-Process notepad "note$i.txt"}'; $script | Out-File -FilePath "run.ps1" -Encoding UTF8; powershell -ExecutionPolicy Bypass -File "run.ps1"
